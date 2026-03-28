@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Переменные */
+:root {
+  --black: #000000;       /* самый тёмный цвет */
+  --dark-gray: #2E2E2E;   /* основной тёмный фон */
+  --medium-gray: #3D3D3D; /* для элементов фона/контейнеров */
+  --gray: #585858;        /* обводка */
+  --white: #FFFFFF;       /* самый светлый цвет */
+}
+
+body {
+  background-color: var(--dark-gray);
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  color: var(--white);
+}
+
+/* Выравнивание страницы */
+.layout {
+  display: flex;
+  height: 100vh;
+}
+
+/* Сайдбар */
+.sidebar {
+  width: 412px;
+  background-color: var(--dark-gray);
+  position: relative;
+  border-right: 2px solid var(--gray);
+}
+
+/* Контент сайдбара */
+.sidebar-inner {
+  padding: 42px;
+  position: relative;
+  z-index: 3;
+}
+
+/* Portfolio */
+.portfolio {
+  flex: 1;
+  padding: 20px;
+}
+
+.avatar-wrapper {
+  position: relative;
+  height: 160px;
+  width: 160px;
+}
+
+.decor {
+  color: var(--medium-gray);
+  position: absolute;
+  z-index: 1;
+}
+
+.decor--top-sidebar {
+  justify-content: center;
+}
+
+.decor--avatar {
+  border: 2px solid var(--medium-gray);
+  top: -10px;
+  left: 10px;
+  width: 160px;
+  height: 160px;
+}
+
+.decor--buttom-sidebar {
+  justify-content: center;
+  top: 532px;
+}
+
+/* Аватар */
+.avatar {
+  position: relative;
+  width: 160px;
+  height: 160px;
+  background-color: var(--white);
+  overflow: hidden;   /* обрезаем лишнее */
+  z-index: 2;
+}
+
+.avatar img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Заголовок H1 */
+.title{
+  margin-top: 24px;
+  font-weight: 700; /* medium */
+  font-size: 38px;
+}
+
+/* Заголовок H2 */
+.subtitle {
+  font-weight: 500; /* bold */
+  font-size: 30px;
+}
+
+/* Контейнер текста */
+.text {
+  margin-top: 16px;
+  padding-bottom: 48px;
+}
+
+/* Обычный текст */
+.text p {
+  line-height: 1.4;
+  margin-bottom: 12px;
+}
+
+.text p:last-child {
+  margin-bottom: 0;
+}
+
+.btn--main{
+  width: 100%;
+  margin-bottom: 16px;
+}
+.btn--outline{
+  width: 100%;
+  margin-bottom: 42px;
+}
+.small-buttons-line {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+.btn--small{
+  width: 100%;
+}

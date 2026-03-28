@@ -1,0 +1,107 @@
+.btn {
+  display: flex;
+  text-decoration: none;
+}
+
+.btn__inner {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  /* ВСЕГДА центр */
+  align-items: center;
+
+  background: var(--white);
+  color: var(--dark-gray);
+
+  padding: 14px 32px 15px 32px;
+
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+
+  transition: all 0.3s ease;
+}
+
+/* Общая строка контента */
+.btn__arrow,
+.btn__icon {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  color: var(--dark-gray);
+  /* тёмно-серый */
+}
+
+/* Telegram + текст блок */
+.btn__icon {
+  margin-right: 12px;
+}
+
+.btn__text {
+  color: var(--black);
+}
+
+/* СТАРТОВОЕ СОСТОЯНИЕ: стрелка скрыта и не влияет */
+.btn__arrow {
+  width: 0;
+  opacity: 0;
+  margin-right: 0;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+/* HOVER: стрелка появляется и толкает центр */
+.btn:hover .btn__arrow {
+  width: 24px;
+  opacity: 1;
+  margin-left: 12px;
+}
+
+/* OUTLINE версия кнопки */
+.btn--outline .btn__inner, .btn--small .btn__inner {
+  background: transparent;
+  /* убираем заливку */
+  border: 1px solid var(--gray);
+  /* серая обводка */
+
+  color: var(--white);
+}
+
+/* текст белый */
+.btn--outline .btn__text, .btn--small .btn__text {
+  color: var(--white);
+}
+
+/* HOVER — обводка становится белой */
+.btn--outline:hover .btn__inner, .btn--small:hover .btn__inner  {
+  border-color: var(--white);
+}
+
+/* small версия кнопки */
+.btn--small .btn__inner {
+  justify-content: start;
+  padding: 12px 16px 13px 20px;
+}
+
+.btn--small .btn__icon {
+  margin-right: 8px;
+}
+
+.btn--small .btn__icon {
+  width: 16px;
+  height: 16px;
+}
+
+.btn--small .btn__text {
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  color: var(--white);
+}
