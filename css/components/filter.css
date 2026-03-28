@@ -1,0 +1,31 @@
+.filters {
+  display: flex;
+}
+
+.filters__btn {
+  padding: 12px 32px 13px 32px;
+
+  border: 1px solid var(--light-gray);
+  background: transparent;
+
+  color: var(--white);
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+.filters__btn:hover {
+  border-color: var(--white);
+}
+
+.filters__btn--active {
+  background: var(--white);
+  color: var(--black);
+  border-color: var(--white);
+  pointer-events: none;
+}

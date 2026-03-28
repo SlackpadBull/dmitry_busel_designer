@@ -69,7 +69,7 @@
 .btn--outline .btn__inner, .btn--small .btn__inner {
   background: transparent;
   /* убираем заливку */
-  border: 1px solid var(--gray);
+  border: 1px solid var(--light-gray);
   /* серая обводка */
 
   color: var(--white);
