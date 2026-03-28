@@ -1,0 +1,30 @@
+/* Сбросить отступы */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Сбросить стили списков */
+ul, ol {
+  list-style: none;
+}
+
+/* Сбросить ссылки */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Сбросить картинки */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Сбросить кнопки */
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
