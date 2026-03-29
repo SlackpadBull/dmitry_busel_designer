@@ -16,6 +16,7 @@
   <link rel="stylesheet" href="./css/components/link.css" />
   <link rel="stylesheet" href="./css/components/card.css" />
   <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./js/script.js" />
 </head>
 
 <body>
@@ -203,12 +204,12 @@
 
       <!-- Верхний блок -->
       <div class="portfolio__header">
-        <h2 class="subtitle">Портфолио</h2>
+        <h2 class="title">Портфолио</h2>
 
         <!-- Фильтры -->
         <div class="filters">
 
-          <button class="filters__btn filters__btn--active" data-filter="all">Все</button>
+          <button class="filters__btn filters__btn--active" data-filter="all">Все работы</button>
 
           <button class="filters__btn" data-filter="mobile">Мобильные приложения</button>
 
@@ -221,19 +222,33 @@
         </div>
       </div>
 
-      <!-- Карточки
-        <div class="portfolio__grid">
-          <a href="#" class="card" data-category="mobile">
-            <img src="img1.jpg" alt="">
-            <div class="card__title">Проект 1</div>
-          </a>
+      <!-- Карточки -->
+      <div class="portfolio__grid">
+        <a href="#" class="card" data-category="mobile">
+          <div class="card__img-container">
+            <img class="card__img" src="./assets/img/burabay.png" alt="Burabay Travel">
+          </div>
+          <div class="card__description">
+            <h1 class="subtitle">Burabay Travel</h1>
+            <p class="card__text">
+              Приложение Burabay - это агрегатор представляющий информацию о всех услугах и сервисах курорта Боровое.
+            </p>
+          </div>
+        </a>
 
-          <a href="#" class="card" data-category="site">
-            <img src="img2.jpg" alt="">
-            <div class="card__title">Проект 2</div>
-          </a>
+        <a href="#" class="card" data-category="mobile">
+          <div class="card__img-container">
+            <img class="card__img" src="./assets/img/burabay.png" alt="Burabay Travel">
+          </div>
+          <div class="card__description">
+            <h1 class="subtitle">Burabay Travel</h1>
+            <p class="card__text">
+              Приложение Burabay - это агрегатор представляющий информацию о всех услугах и сервисах курорта Боровое.
+            </p>
+          </div>
+        </a>
 
-        </div> -->
+        </div>
     </main>
   </div>
 </body>

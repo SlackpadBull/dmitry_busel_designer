@@ -1,0 +1,54 @@
+.card {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  overflow: hidden;
+  transition: 0.3s ease;
+  border-radius: 8px;
+}
+
+.card__img-container {
+  width: 100%;
+  height: 500px;
+  background: var(--black);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+}
+
+.card__img {
+  width: 550px;
+  height: 400px;
+  object-fit: cover;
+}
+
+.card__description {
+  background: var(--medium-gray);
+  padding: 20px 32px 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.card__text {
+  height: 50px;
+  overflow: hidden;
+  line-height: 1.4em;
+
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+
+  /* старый способ (основной) */
+  -webkit-line-clamp: 2;
+
+  /* новый стандарт (на будущее) */
+  line-clamp: 2;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  transition: 0.2s ease;
+}

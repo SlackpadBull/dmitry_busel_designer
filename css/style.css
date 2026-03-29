@@ -33,6 +33,7 @@ body {
   background-color: var(--dark-gray);
   position: relative;
   border-right: 2px solid var(--light-gray);
+  flex-shrink: 0;
 }
 
 /* Контент сайдбара */
@@ -150,8 +151,13 @@ body {
   border-bottom: 1px solid var(--light-gray);;
 }
 
+.portfolio__header .title {
+  margin-top: 0px;
+}
+
 .portfolio__grid {
+  padding: 22px 40px 22px 40px;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 24px;
 }
