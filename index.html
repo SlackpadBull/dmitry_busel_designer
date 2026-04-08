@@ -28,7 +28,7 @@
           <path d="M-83 142.803L24 120.795M24 120.795L492.191 24.5M24 120.795L24 0M24 120.795L24 172"
             stroke="currentColor" stroke-width="2" />
         </svg>
-      
+
       </div>
       <div class="decor decor--buttom-sidebar">
         <svg width="410" height="121" viewBox="0 0 400 121" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -201,7 +201,7 @@
     </aside>
 
     <main class="portfolio">
-      
+
       <!-- <div class="decor decor--right-main">
       <svg width="333" height="1300" viewBox="0 0 333 945" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M332 1182.5L332 57.3125M332 -203.5L332 57.3125M332 57.3125L4.91835e-05 57.3125" stroke="#3D3D3D"
@@ -211,6 +211,7 @@
 
       <!-- Верхний блок -->
       <div class="portfolio__header">
+
         <h2 class="title">Портфолио</h2>
 
         <!-- Фильтры -->
@@ -231,7 +232,24 @@
 
       <!-- Карточки -->
 
-      
+      <!-- Детальное представление карточки -->
+      <div class="card-detail hidden">
+        <div class="card-detail__header">
+          <button class="card-detail__back">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M4 12H20M4 12L12 4M4 12L12 20" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+            Назад
+          </button>
+        </div>
+        <div class="card-detail__content">
+          <img class="card-detail__img" src="" alt="">
+          <h1 class="card-detail__title"></h1>
+          <p class="card-detail__text"></p>
+        </div>
+      </div>
+
       <div class="portfolio__grid">
         <a href="#" class="card" data-category="mobile">
           <div class="card__img-container">
